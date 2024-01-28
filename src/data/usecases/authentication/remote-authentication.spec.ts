@@ -1,11 +1,10 @@
-import { HttpStatusCode } from '@/data/protocols/http/http-response'
+import { HttpStatusCode } from '@/data/protocols/http'
 import { RemoteAuthentication } from './remote-authentication'
-import { HttpPostClientSpy } from '@/data/test/mock-http-client'
-import { mockAccountModel, mockAuthentication } from '@/domain/test/mock-account'
-import { InvalidCredentialsError } from '@/domain/errors/invalid-credentials-error'
-import { UnexpectedError } from '@/domain/errors/unexpected-error'
-import { AccountModel } from '@/domain/models/account-models'
-import { AutheticationParams } from '@/domain/usecases/authentication'
+import { HttpPostClientSpy } from '@/data/test'
+import { mockAccountModel, mockAuthentication } from '@/domain/test'
+import { InvalidCredentialsError, UnexpectedError } from '@/domain/errors'
+import { AccountModel } from '@/domain/models'
+import { AutheticationParams } from '@/domain/usecases'
 import { faker } from '@faker-js/faker'
 
 type SutTypes = {
