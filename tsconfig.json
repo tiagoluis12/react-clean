@@ -18,7 +18,12 @@
       "@/tests/*": ["../tests/*"]
     },
     "allowJs": true,
-    "resolveJsonModule": true
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true
   },
   "include": ["src", "tests"],
   "exclude": ["tests/e2e/cypress"]
